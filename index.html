@@ -1,50 +1,66 @@
 <!DOCTYPE html>
 <html>
-    <head>
-    <title>Mon Protefolio</title>
-    <meta charset="utf-8">
+	<head>
+	<title>Mon Protefolio</title>
+	<meta charset="utf-8">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="CSS/style.css">
-    </head>
+	<link rel="stylesheet" href="CSS/style.css">
+	</head>
 
-    <body>
-        <header class="container-fluid row">
-            <div class="col-10 presentation">
-                <h1>PEREIRA CABRAL Kalvin</h1>
-                <h2>Développeur Web</h2>
-            </div>
-        </header>
-        <section class="container-fluid row">
-            <div class="col-11 my_photo">  <!--Définir les mesures bootstrap pour l'image-->
-                <!--Placer l'image ici-->
-            </div>
-        </section>
-        <footer class="container col-11 row">
-            <h2 class="col-10 Realisation">Projets réalisés</h2>
-            <article class="col-sm-12 col-md-12 col-lg-4 col-xl-4">
-                <div class="col-12">
-                    <!--Placer l'image ici-->
-                </div>
-                <h3>Nom de Projet</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean viverra malesuada felis ac rhoncus. Mauris mattis at enim id malesuada. Ut dignissim turpis sed ultrices interdum. Integer euismod ex sit amet nisi accumsan vulputate. Nunc sit amet metus diam. Phasellus rutrum ligula id urna gravida pretium.</p>
-                <a href="">Condulter Projet</a>
-            </article>
-            <article class="col-sm-12 col-md-12 col-lg-4 col-xl-4">
-                <div class="col-12">
-                    <!--Placer l'image ici-->
-                </div>
-                <h3>Nom de Projet</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean viverra malesuada felis ac rhoncus. Mauris mattis at enim id malesuada. Ut dignissim turpis sed ultrices interdum. Integer euismod ex sit amet nisi accumsan vulputate. Nunc sit amet metus diam. Phasellus rutrum ligula id urna gravida pretium.</p>
-                <a href="">Condulter Projet</a>
-            </article>
-            <article class="col-sm-12 col-md-12 col-lg-4 col-xl-4">
-                <div class="col-12">
-                    <!--Placer l'image ici-->
-                </div>
-                <h3>Nom de Projet</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean viverra malesuada felis ac rhoncus. Mauris mattis at enim id malesuada. Ut dignissim turpis sed ultrices interdum. Integer euismod ex sit amet nisi accumsan vulputate. Nunc sit amet metus diam. Phasellus rutrum ligula id urna gravida pretium.</p>
-                <a href="">Condulter Projet</a>
-            </article>
-        </footer>  
-    </body>
+	<body>
+		<header class="main_head container-fluid">
+			<div class="col-10 presentation">
+				<h1 class="col-sm-12 col-md-12 col-lg-10 col-xl-10">PEREIRA CABRAL Kalvin</h1>
+				<h2 class="col-sm-12 col-md-12 col-lg-10 col-xl-10">Développeur Web</h2>
+			</div>
+		</header>
+		<section class="main_photo container-fluid">
+			<div class="my_photo col-12">
+				<img class="col-10" src="img/my_beloved_main.png" alt="A quite good representations of me !">
+			</div>
+		</section>
+		<footer class="container-fluid">
+			<header class="col-10 title">
+				<h2 class="col-12 realisation">Projets réalisés</h2>
+			</header>
+			<section class=" col-10 article_parent">
+				<article class="col-sm-12 col-md-12 col-lg-4 col-xl-4">
+					<div class="col-11 article_box">
+						<div class="col-12 project_pic">
+							<img src="img/Projet_Annuaire.png" alt="A pretty cool project !">
+						</div>
+						<h3 class="col-11">Annuaire des Artisans de l'Aude</h3>
+						<p class="col-11">Un projet pédagogique haut en couleur alliant créativité et professionnalisme. Il a demandé des ressources en force de proposition et en coordination.</p>
+						<span class="col-11">
+							<a href="">Condulter Projet</a>
+						</span>
+					</div>
+				</article>
+				<article class="col-sm-12 col-md-12 col-lg-4 col-xl-4">
+					<div class="col-11 article_box">
+						<div class="col-12 project_pic">
+							<img src="img/Peach_Turnip_to_death.jpg" alt="A hard performance !">
+						</div>
+						<h3 class="col-11">Compétition SSBU</h3>
+						<p class="col-11">Une passion à haut niveau qui demande une dextérité rigoureuse. Cela implique une réactivité à fleur de peau, un sens de la stratégie inébranlable, une maîtrise de soi intense et avant tout une compréhension de ses adversaires foudroyante.</p>
+						<span class="col-11">
+							<a href="">Condulter Projet</a>
+						</span>
+					</div>
+				</article>
+				<article class="col-sm-12 col-md-12 col-lg-4 col-xl-4">
+					<div class="col-11 article_box">
+						<div class="col-12 project_pic">
+							<img src="img/Copy_OpenClassroom.png" alt="Satisfying exercise !">
+						</div>
+						<h3 class="col-11">Recréation d'un page</h3>
+						<p class="col-11">Un exercice éprouvant mais permettant un beau parallèle entre les techniques de chacun. Chacun code à sa façon trouve son résultat, une jolie leçon apprise !</p>
+						<span class="col-11">
+							<a href="">Condulter Projet</a>
+						</span>
+					</div>
+				</article>
+			</section>
+		</footer>  
+	</body>
 </html>

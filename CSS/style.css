@@ -3,18 +3,14 @@ body, html {
   padding: 0;
 }
 
-header .presentation {
-  margin: 1% 3%;
-}
-
-section {
+.main_head {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row wrap;
-          flex-direction: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -23,12 +19,186 @@ section {
           align-items: center;
 }
 
-section .my_photo {
-  background: rgba(124, 23, 192, 0.603);
-  height: 18rem;
+.main_head .presentation {
+  border-bottom: 3px solid #8798ad;
+  margin: 1% 0;
 }
 
-footer .Realisation {
-  margin: 1% 3%;
+.main_head .presentation h1 {
+  color: #484e53;
+  font-size: 2.3rem;
+}
+
+.main_head .presentation h2 {
+  color: #484e53;
+  font-size: 1.2rem;
+}
+
+.main_photo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 3%;
+}
+
+.main_photo .my_photo {
+  overflow: hidden;
+  height: 29rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main_photo .my_photo img {
+  width: 100%;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .title h2 {
+  color: #484e53;
+}
+
+footer .article_parent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+footer .article_parent article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2% 0%;
+  padding: 0;
+}
+
+footer .article_parent article .article_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid rgba(135, 152, 173, 0.3);
+  padding: 0;
+  height: 25rem;
+  -webkit-transition: background-color 0.3s ease-out;
+  transition: background-color 0.3s ease-out;
+}
+
+footer .article_parent article .article_box:hover {
+  background-color: rgba(225, 0, 255, 0.2);
+}
+
+footer .article_parent article .article_box .project_pic {
+  padding: 0;
+  height: 40%;
+}
+
+footer .article_parent article .article_box .project_pic img {
+  width: 100%;
+  height: 100%;
+}
+
+footer .article_parent article .article_box h3 {
+  color: #484e53;
+  font-size: 1.3rem;
+  margin: 2% 0;
+  height: 20%;
+}
+
+footer .article_parent article .article_box p {
+  color: #484e53;
+  font-size: 0.8rem;
+  height: 20%;
+}
+
+footer .article_parent article .article_box span {
+  margin-bottom: 5%;
+  height: 20%;
+}
+
+footer .article_parent article .article_box span a {
+  padding: 3%;
+  color: white;
+  background-color: #484e53;
+  border-radius: 4px;
+  font-size: 0.8rem;
+}
+
+@media screen and (max-width: 640px) {
+  .presentation h1 {
+    font-size: 5rem;
+    text-align: center;
+  }
+  .presentation h2 {
+    font-size: 3rem;
+    text-align: center;
+  }
+  .main_photo {
+    margin: 0;
+  }
+  .main_photo .my_photo {
+    overflow: visible;
+    height: 15rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -4,29 +4,143 @@ body, html
     padding: 0;
 }
 
-header
-{
-    .presentation
-    {
-        margin: 1% 3%;
-    }
-}
-section
+@mixin flex_center()
 {
     display: flex;
-    flex-direction: row wrap;
+    flex-flow: row wrap;
     justify-content: center;
     align-items: center;
+}
+
+.main_head
+{
+    @include flex_center();
+    .presentation
+    {
+        border-bottom: 3px solid #8798ad;
+        margin: 1% 0;
+        h1
+        {
+            color: #484e53;
+            font-size: 2.3rem;
+        }
+        h2
+        {
+            color: #484e53;
+            font-size: 1.2rem;
+        }
+    }
+}
+.main_photo
+{
+    @include flex_center();
+    margin-bottom: 3%;
     .my_photo
     {
-        background: rgba(124, 23, 192, 0.603);
-        height: 18rem;
+        overflow: hidden;
+        height: 29rem;
+        @include flex_center();
+        img
+        {
+            width: 100%;
+        }
     }
 }
 footer
 {
-    .Realisation
+    .title
     {
-        margin: 1% 3%;
+        h2
+        {
+            color: #484e53;
+        }
+    }
+    @include flex_center();
+    .article_parent
+    {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        article
+        {
+            @include flex_center();
+            margin: 2% 0%;
+            padding: 0;
+            .article_box
+            {
+                @include flex_center();
+                border: 1px solid rgba(#8798ad, 0.3);
+                padding: 0;
+                height: 25rem;
+                transition: background-color 0.3s ease-out;
+                &:hover
+                {
+                    background-color: rgba(225, 0, 255, 0.2);
+                }
+                .project_pic
+                {
+                    padding: 0;
+                    height: 40%;
+                    img
+                    {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                h3
+                {
+                    color: #484e53;
+                    font-size: 1.3rem;
+                    margin: 2% 0;
+                    height: 20%;
+                }
+                p
+                {
+                    color: #484e53;
+                    font-size: 0.8rem;
+                    height: 20%;
+                }
+                span
+                {
+                    margin-bottom: 5%;
+                    height: 20%;
+                    a
+                    {
+                        padding: 3%;
+                        color: white;
+                        background-color: #484e53;
+                        border-radius: 4px;
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 640px)
+{
+    .presentation
+    {
+        h1
+        {
+            font-size: 5rem;
+            text-align: center;
+        }
+        h2
+        {
+            font-size: 3rem;
+            text-align: center;
+        }
+    }
+    .main_photo
+    {
+        margin: 0;
+        .my_photo
+        {
+            overflow: visible;
+            height: 15rem;
+            //trouver un moyen de fix l'image de .my_photo (Peach)
+        }
     }
 }
