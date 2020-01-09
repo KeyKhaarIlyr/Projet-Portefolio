@@ -86,4 +86,4 @@
   const ellipse = document.getElementsByClassName("ellipse");
   shave(ellipse, 40);
 
-  alert("Pour la bonne troncature du texte en ellipse, pensez à raffraîchir la pache ! Bonne visite ~");
+  alert("Pour la bonne troncature du texte en ellipse, pensez à raffraîchir la page ! Bonne visite ~");
